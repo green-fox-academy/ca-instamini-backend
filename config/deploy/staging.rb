@@ -2,8 +2,12 @@
 # ======================
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
+set :stage, :staging
 
 server "mobil.ninja", user: "deployer", roles: %w{app db web}
+
+set :nginx_server_name, "#{fetch(:application)}.mobil.ninja"
+
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 

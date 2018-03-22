@@ -8,7 +8,7 @@ set :repo_url, "git@github.com:greenfox-academy/ca-instamini-backend.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '~/apps/instamini'
+set :deploy_to, '/home/deployer/apps/instamini'
 set :deploy_user, 'deployer'
 
 # Default value for :format is :airbrussh.
